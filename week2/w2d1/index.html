@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--this is a comment in HTML-->
+    <!--<head> loads first, tells browser info about how to interpert our page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="C Lefebvre">
+    <meta name="description" content="W1 Demo">
+
+    <title>W#2 | Demo</title>
+</head>
+<body>
+    
+    <!--the <body> element holds ALL CONTENT FOR THE PAGE!-->
+    <!--there should only ever be one <head> and one <body>-->
+
+    <!--Block Level Elements: building blocks of a page! create maine structure (both orginizational and content-wise)-->
+
+    <!--Headings [1-6] are just like heading styles in Word-->
+    <h1 id="top" style="border:1px solid red">Heading 1</h1> <!--style="blahblahblah is a CSS styling"--> <!--ONLY ONE <h1> PER PAGE FOR SEO-->
+    <h2 style="border:10px solid rgb(38, 132, 187)">Heading 2</h2>  
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!--HORIZONTAL RULE below <h4> : creates seperation between sections of page-->
+    <hr>
+
+    <!--DIV's are dividers/divisions - they do not contain "content", they contain and help organize other HTML elements-->
+    <div style="background-color:black; color: whitesmoke;">
+        <h2 id="list"></h2>List Types in HTML</h2>
+
+        <!--ordered list-->
+        <ol>
+            <!--add a list for item for each line item in the list-->
+            <li>Gaming</li>
+            <li>Hiking</li>
+            <li>Binging Shows</li>
+            <li>Too many interests, not enough time/space/money lol</li>
+        </ol>
+
+        <!--unordered list-->
+        <ul>
+            <!--add a list for item for each line item in the list-->
+            <li>Bleach</li>
+            <li>X-Files</li>
+            <li>Stargate SG-1</li>
+            <li>Star Wars</li>
+            <li>Delicious in Dungeon</li>
+            <br>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <h2>Basic Paragraph Text + in - Line Tags</h2>
+
+    <!--inline elements do NOT create structure, they are used *in line* of another HTML element! They usually add visual style or emphasis, help support SEO, or support data managment-->
+
+    <!--<p> for paragraph (block level element)-->
+    <p>I got one dog, her name is <b>Kenzi</b><!--bold--> and shes chonk and a chocolate lab,<br><!--break space - creates a new empty line, stackable for multiple lines--> also the <u>biggest</u><!--underline--> <i>fiend</i><!--italics--> for food this world has ever known.</p>
+
+    <p>The <strong>strong</strong> tag makes content appear bolded.</p>
+    <p>The <em>emphasis</em> tag makes content appear italicized.</p>
+
+    <!--Block level elements always adjust and span the width of the container-->
+    
+    <hr>
+    <h2>Week 2 Demo</h2>
+
+    <!--add a link to neit.edu-->
+    <!--this is a example of a ABSOLUTE path (starts with a protocol)-->
+
+    <h4>Check out my school's website: <a href="https://www.neit.edu" target="_blank">neit.edu</a></h4> <!--target="_blank" opens up the link in a new tab-->
+
+    <!--link to our W1 demo webpage-->
+    <!--since this week folder lives within a larger "SE111_202530" folder, we can create relative paths to other content housed within "SE111_202530"-->
+    <p>My first HTML demo can be found <a href="../../week1/demo/index.html" target="_blank">here</a> for your review</p>
+
+    <p>Take us back to the <a href="#top">top</a> of the page!</p>
+    <p>Take us back to the <a href="#list">lists</a> of the page!</p>
+
+    <hr>
+
+    <!--image test-->
+    <!--always safest to use REALITIVE file paths with our image content-->
+
+    <img src="images/lotr_dragons.jpg" alt="LotR Dragons - Stolen from the internet~" width="500px" title="Dragons!">
+
+</body>
+</html>
