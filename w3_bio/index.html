@@ -8,33 +8,122 @@
     <meta name="description" content="Week 3 - Multi-Page Bio">
 
     <title>W#3 | Multi-Page Bio</title>
+    <!--in-document styling - stated one time in the document, applies to anything selected in the document!-->
+    <style>
+        body {
+            font-family:Source Code Pro, monospace;
+            background-color:rgb(39, 39, 39);
+        }
+
+        #wrapper {
+            background-color:rgb(143, 143, 143);
+            width:900px;
+            padding:25px; /*i add space inside of the lement's border*/
+            margin:auto;/*i auto center the element in the page*/
+            border:2px solid black;
+            box-shadow: 2px 2px 2px black; /*i add a drop shadow!*/
+            border-radius:10px; /*i round rectangle corners!*/
+            /*margin-top:10px; /*i move the element away from the top of the browser chrome*/
+        
+        }
+
+        #header, #main, #footer {
+
+            padding:10px;
+            margin:20px;
+            text-align: center
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: rgb(24, 24, 24)
+        }
+
+        img {
+
+            width:400px;
+            border:2px solid rgb(24, 24, 24);
+        }
+
+        #container {
+            display: flex;
+            gap: 10px
+        }
+
+        #images {
+            display:flex;   /*i flex is wild, same with container tech */
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #header {
+
+            text-align:center;
+        }
+
+        #navigation {
+            text-align: center;
+            background-color:rgb(94, 94, 94);
+            max-width:800px;
+            margin:auto;
+            border-radius:10px;
+            padding:15px
+        }
+
+        #footer {
+            font-size:10px;
+            text-align:center;
+        }
+
+    </style>
 </head>
-<body style="background-color: rgb(63, 63, 63)">
+<body>
 
     <div id="wrapper" >
-        <div id="header" style="text-align: center">
+        <div id="header">
 
             <h1>Week 3: <i>Multi-Page Bio</i></h1>
 
         </div> <!--Section Topic: Header-->
-        <div id="navigation" style="text-align: center; background-color: rgb(94, 94, 94); max-width: 800px; margin: auto; padding: 20px"> <!--pretty nifty being able to center things, and multple "styles" lol-->
+        <div id="navigation"> 
 
-            <a href="#bio"> Bio |</a> <!--fun little easter egg comment: whoever named it the web/web sites, pretty cool thinking of all the links like a web, each branching out-->
-            <a href="#school"> School |</a>
-            <a href="#hobbies"> Hobbies |</a>
-            <a href="#footer"> Bottom of Page</a>
+            <a href="bio/index.html">Bio</a> <strong> |</strong>
+            <a href="school/index.html">School</a><strong> |</strong>
+            <a href="hobbies/index.html">Hobbies</a><strong> |</strong>
+            <a href="#footer">Bottom of Page</a>
 
         </div> <!--Section Topic: Navigation-->
-        <hr style="border: none; height: 2px; background-color: rgb(56, 39, 39)">
-        <div id="main"style="text-align: center">
+        <hr>
+        <div id="main">
 
-            <p>Main content woooooooo</p>
+            <h2>Landing Page Memes</h2>
+            <br>
+            <div id="container">
+                <div id="images">
+                
+                    <img src="images/science.jpg" alt="science">
+                    <img src="images/barb.jpg" alt="barb">
+                    <img src="images/onepiecejojo.jpg" alt="one piece">
+                    <p><i>hello there</i></p>
 
+                    
+                </div>
+                <div id="images">
+
+                    <img src="images/bannabreb.jpg" alt="banannabreb">
+                    <img src="images/python.jpg" alt="python">
+                    <img src="images/nerds.jpg" alt="got">
+                    <img src="images/army.jpg" alt="sorry if too spicy">
+
+                </div><!--container-->
+            </div><!--images-->
         </div> <!--Section Topic: Main-->
-        <hr style="border: none; height: 2px; background-color: rgb(56, 39, 39)">
-        <div id="footer" style="text-align: center">
+        <hr>
+        <div id="footer">
 
             <p>&copy; Cameron Lefebvre | SE111 | Spring 2025</p>
+            <a href="#header">Top of Page</a>
 
         </div> <!--Section Topic: Footer-->
     </div>

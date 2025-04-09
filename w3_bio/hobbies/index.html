@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Cameron Lefebvre">
+    <meta name="description" content="Week 3 - Multi-Page Bio">
+
+    <title>W#3 | Multi-Page Bio</title>
+    <!--in-document styling - stated one time in the document, applies to anything selected in the document!-->
+    <style>
+        body {
+            font-family:Source Code Pro, monospace;
+            background-color:rgb(39, 39, 39);
+        }
+
+        #wrapper {
+            background-color:rgb(143, 143, 143);
+            width:900px;
+            padding:25px; /*i add space inside of the lement's border*/
+            margin:auto;/*i auto center the element in the page*/
+            border:2px solid black;
+            box-shadow: 2px 2px 2px black; /*i add a drop shadow!*/
+            border-radius:10px; /*i round rectangle corners!*/
+            /*margin-top:10px; /*i move the element away from the top of the browser chrome*/
+        
+        }
+
+        #header, #main, #footer {
+
+            padding:10px;
+            margin:20px;
+            text-align: center
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: rgb(24, 24, 24)
+        }
+
+        img {
+
+            width:400px;
+            border:2px solid rgb(24, 24, 24);
+        }
+
+        #header {
+
+            text-align:center;
+        }
+
+        #navigation {
+            text-align: center;
+            background-color:rgb(94, 94, 94);
+            max-width:800px;
+            margin:auto;
+            border-radius:10px;
+            padding:15px
+        }
+
+        #footer {
+            font-size:10px;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrapper" >
+        <div id="header">
+
+            <h1>Week 3: <i>Multi-Page Bio</i></h1>
+
+        </div> <!--Section Topic: Header-->
+        <div id="navigation"> 
+
+            <a href="../index.html">Landing Page</a> <strong> |</strong>
+            <a href="../bio/index.html">Bio</a> <strong> |</strong>
+            <a href="../school/index.html">School</a><strong> |</strong>
+            <a href="index.html">Hobbies</a><strong> |</strong>
+            <a href="#footer">Bottom of Page</a>
+
+        </div> <!--Section Topic: Navigation-->
+        <hr>
+        <div id="main">
+
+            <h2>Hobbies</h2>
+
+        </div> <!--Section Topic: Main-->
+        <hr>
+        <div id="footer">
+
+            <p>&copy; Cameron Lefebvre | SE111 | Spring 2025</p>
+            <a href="#header">Top of Page</a>
+
+        </div> <!--Section Topic: Footer-->
+    </div>
+    
+</body>
+</html>
