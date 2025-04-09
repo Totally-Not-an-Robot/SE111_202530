@@ -46,6 +46,22 @@
             border:2px solid rgb(24, 24, 24);
         }
 
+        #container {
+            display: flex;
+            gap: 10px
+        }
+
+        .schools {
+            display:flex; 
+            flex-direction: column;
+            width: 50%;
+            gap: 10px;
+        }
+
+        .list {
+            text-align: left;
+        }
+
         #header {
 
             text-align:center;
@@ -88,6 +104,35 @@
         <div id="main">
 
             <h2>Schools</h2>
+            <br>
+            <div id="container">
+                <div class="schools list">
+                
+                    <ul>
+                        <h3>Attended</h3>
+                        <li>Robertson Elemetary</li>
+                        <li>Tollgate Highschool:</li>
+                        <ul>
+                            <li>Also attended the Warwick Area Career and Technical Center for Mechanical Drafting & Design</li>
+                        </ul>
+                        <li>New England Tech:</li>
+                        <ul>
+                            <li>Civil Engineering Associates</li>
+                            <li>Civil Engineering Bachelors</li>
+                            <li>Cyber Security & Networking Associates</li>
+                        </ul>
+                    </ul>
+                    <br><br>
+                    <img src="../images/New_England_Institute_of_Technology.jpg" alt="neit"> <!--Didnt feel like lining it up perfectly with the others, so this will do fine-->
+                    
+                </div><!--schools list-->
+                <div class="schools">
+
+                    <img src="../images/Robertson-Elementary.jpg" alt="robertson">
+                    <img src="../images/tollgate.webp" alt="tollgate">
+
+                </div><!--schools-->
+            </div><!--container-->
 
         </div> <!--Section Topic: Main-->
         <hr>
