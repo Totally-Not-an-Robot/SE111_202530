@@ -1,83 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
     <meta name="author" content="Cameron Lefebvre">
-    <meta name="description" content="main course repo index">
+    <meta name="description" content="Week 3 - Index Repository">
 
-    <title>Camerons Repo Index</title>
+    <title>W#3 | Index Repository</title>
+    <!--in-document styling - stated one time in the document, applies to anything selected in the document!-->
+    <style>
+        body {
+            font-family:Source Code Pro, monospace;
+            background-color:rgb(39, 39, 39);
+        }
 
+        #wrapper {
+            background-color:rgb(143, 143, 143);
+            width:900px;
+            padding:25px; /*i add space inside of the lement's border*/
+            margin:auto;/*i auto center the element in the page*/
+            border:2px solid black;
+            box-shadow: 2px 2px 2px black; /*i add a drop shadow!*/
+            border-radius:10px; /*i round rectangle corners!*/
+            /*margin-top:10px; /*i move the element away from the top of the browser chrome*/
+        
+        }
+
+        #header, #main, #footer {
+
+            padding:10px;
+            margin:20px;
+            text-align: center
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: rgb(24, 24, 24)
+        }
+
+        img {
+
+            width:400px;
+            border:2px solid rgb(24, 24, 24);
+        }
+
+        #container {
+            display: flex;
+            gap: 10px
+        }
+
+        .dual_section {
+            display:flex; 
+            flex-direction: column;
+            width: 50%;
+            gap: 10px;
+            background-color: rgb(83, 83, 83);
+            box-shadow: 2px 2px 2px black;
+            border-radius:10px;
+        }
+
+        #header {
+
+            text-align:center;
+        }
+
+        #navigation {
+            text-align: center;
+            background-color:rgb(94, 94, 94);
+            max-width:400px;
+            margin:auto;
+            border-radius:10px;
+            padding:15px
+        }
+
+        #footer {
+            font-size:10px;
+            text-align:center;
+        }
+
+    </style>
 </head>
 <body>
-    
-    <!--all vaiewable page content belongs in the body element-->
 
-    <div id="wrapper">
-
-        <!--HEADER-->
-
+    <div id="wrapper" >
         <div id="header">
 
-            <h1>This is the SE111 ~Repository Index~</h1>
+            <h1>Week 3: <i>Index Repository</i></h1>
 
-        </div>
+        </div> <!--Section Topic: Header-->
+        <div id="navigation"> 
 
-        <!--NAVIGATION-->
+            <a href="#footer">Bottom of Page</a>
 
-        <div id="navigation">
+        </div> <!--Section Topic: Navigation-->
+        <hr>
+        <div id="main">
 
-            <!--External link (going outside our site; absoulte path)-->
-            <h4><a href="https://github.com/Totally-Not-an-Robot/SE111_202530" target="_blank">Github Repo</a></h4>
+            <h2>Links</h2>
+            <br>
+            <div id="container">
+                <div class="dual_section">
+                
+                    <h3>Homeworks</h3>
+                    <a href="week1/w1/index.html" target="_blank">Week 1: Bio</a>
+                    <a href="week2/w2/index.html" target="_blank">Week 2: Bio</a>
+                    <a href="week2/w2d2_incorrect_paths/file-paths-incorrect/index.html" target="_blank">Week 2: File Paths Incorrect</a>
+                    <a href="week2/w2d2_correct_paths/file-paths-correct/index.html" target="_blank">Week 2: File Paths Correct</a>
+                    <br>
+                    
+                </div><!--dual_section-->
+                <div class="dual_section">
 
-        </div>
-
-        <!--MAIN BODY/CONTENT-->
-
-        <div id="body">
-
-            <!--week 1 links. This area is filled with RELATIVE links, which are locations that exist in the same directory-->
-            <div id="week1" class="week">
-
-                <h3>Week #1</h3>
-
-                <ul>
-                    <li><a href="week1/demo/index.html">W1D1 | Basic Tags Demo</a></li>
-                    <li><a href="week1/w1/index.html">W1D2 | First Webpage</a></li>
-                </ul>
-
-            </div>
-
-            <!--week 2 links-->
-            <div id="week2" class="week">
-
-                <h3>Week #2</h3>
-
-                <ul>
-                    <li><a href="week2/w2d1/index.html">W2D1 | More Basic Tags Demo</a></li>
-                    <li><a href="week2/W2D2/index.html">W2D1 | Webpage Anatomy</a></li>
-                    <li><a href="week2/w2d2_incorrect_paths/file-paths-incorrect/index.html">W2D1 | Incorrect File Paths</a></li>
-                    <li><a href="week1/demo/index.html">W2D1 | Correct File Paths</a></li>
-                    <li><a href="week2/W2D2/index.html">W2D2 | Bio Page</a></li>
-                </ul>
-
-            </div>
-
-
-        </div>
-
-        <!--FOOTER-->
-
+                    <h3>Random</h3>
+                    <a href="week1/demo/index.html" target="_blank">Week 1: Demo</a>
+                    <a href="root_template/index.html" target="_blank">Week 1: "Root Template"</a>
+                    <a href="week2/W2D2/index.html" target="_blank">Week 2: In-class Bio Work</a>
+                    
+                </div><!--dual_section-->
+            </div><!--container-->
+        </div> <!--Section Topic: Main-->
+        <hr>
         <div id="footer">
 
             <p>&copy; Cameron Lefebvre | SE111 | Spring 2025</p>
+            <a href="#header">Top of Page</a>
 
-        </div>
-
+        </div> <!--Section Topic: Footer-->
     </div>
-
+    
 </body>
 </html>
