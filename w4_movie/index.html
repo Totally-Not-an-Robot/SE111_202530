@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Cameron Lefebvre">
+    <meta name="description" content="Week 4 - Movie Site">
+
+    <title>W#4 | Movie Site </title>
+    <!--in-document styling - stated one time in the document, applies to anything selected in the document!-->
+    <style>
+        body {
+            font-family:Source Code Pro, monospace;
+            background-color:rgb(39, 39, 39);
+            color: black;
+        }
+
+        #wrapper {
+            background-color:rgb(143, 143, 143);
+            width:900px;
+            padding:25px;
+            margin:auto;
+            border:2px solid black;
+            box-shadow: 2px 2px 2px black; 
+            border-radius:10px; 
+            margin-top:10px; 
+        }
+
+        #header, #main, #footer {
+
+            padding:10px;
+            margin:20px;
+            text-align: center
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: rgb(24, 24, 24);
+        }
+
+        img {
+
+            width:400px;
+            border:2px solid rgb(24, 24, 24);
+        }
+
+        .movie_title {
+            text-align:center;
+            font-size: 45px;
+        }
+
+        #container {
+            display: flex;
+            gap: 10px
+        }
+
+        .sub_container {
+            display:flex;
+            width: 400px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #header {
+
+            text-align:center;
+        }
+
+        #navigation {
+            text-align: center;
+            background-color:rgb(94, 94, 94);
+            max-width:400px;
+            margin:auto;
+            border-radius:10px;
+            padding:15px
+        }
+
+        #footer {
+            font-size:10px;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrapper" >
+        <div id="header">
+
+            <h1 class="movie_title"><em>Johnny Mnemonic</em></h1>
+
+        </div> <!--Section Topic: Header-->
+        <div id="navigation"> 
+
+            <a href="#footer">Bottom of Page</a>
+
+        </div> <!--Section Topic: Navigation-->
+        <hr>
+        <div id="main">
+
+            <h2>Home</h2>
+            <br>
+            <div id="container">
+                <div class="sub_container">
+                
+                    <p>left side</p>
+                    
+                </div><!--images-->
+                <div class="sub_container">
+
+                    <p>right side</p>
+
+                </div><!--images-->
+            </div><!--container-->
+        </div> <!--Section Topic: Main-->
+        <hr>
+        <div id="footer">
+
+            <p>&copy; Cameron Lefebvre | SE111 | Spring 2025</p>
+            <a href="#header">Top of Page</a>
+
+        </div> <!--Section Topic: Footer-->
+    </div>
+    
+</body>
+</html>
