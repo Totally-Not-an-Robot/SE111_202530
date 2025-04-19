@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="images/dolphin_icon.png"> <!--if youve seen it, yk why this-->
+    <meta name="author" content="Cameron Lefebvre">
+    <meta name="description" content="Week 4 - Movie Site">
+
+    <title>W#4 | Movie Site </title>
+    <style>
+        body {
+            font-family:Source Code Pro, monospace;
+            background-image: url(images/generated_seamless_background.png);
+            background-size: 47%;
+            color: black;
+        }
+
+        #wrapper {
+            background-color:rgb(51, 51, 51);
+            width:900px;
+            padding:25px;
+            margin:auto;
+            border:2px solid black;
+            box-shadow: 2px 2px 2px black; 
+            border-radius:10px; 
+            margin-top:10px; 
+        }
+
+        #header, #main, #footer {
+
+            padding:10px;
+            margin:20px;
+            text-align: center
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: rgb(24, 24, 24);
+        }
+
+        .dvd_cover {
+            height: 400px;
+        }
+
+        .movie_title {
+            text-align:center;
+            font-size: 45px;
+        }
+
+        #container {
+            display: flex;
+            margin-left: -55px;
+            margin-right: -55px;
+            gap: 10px;
+            background-color: rgb(5, 5, 5);
+            padding: 10px;
+        }
+
+        #header {
+
+            text-align:center;
+        }
+
+        #navigation {
+            position: sticky;
+            margin-left: -27px;
+            top: 0;
+            text-align: center;
+            background-color:rgb(94, 94, 94);
+            width: 950px;
+            margin-right: auto;
+            border:2px solid black;
+            box-shadow: 2px 2px 2px black; 
+        }
+
+        #footer {
+            font-size:10px;
+            text-align:center;
+        }
+
+        .home_button {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: url(images/dolphin_icon.png);
+            background-size: cover;
+            float: left;
+        }
+
+        .home_button:hover {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .button {
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+            background-color: rgba(70, 70, 70, 0.5);
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        #summary {
+            background-color: rgb(90, 90, 90);
+            border:2px solid black;
+            box-shadow: 2px 2px 2px black; 
+            border-radius:10px; 
+            text-align: left;
+            padding: 10px;
+        }
+
+        .paragraph {
+            text-indent: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrapper" >
+        <div id="header">
+
+            <h1 class="movie_title"><em>Johnny Mnemonic</em></h1>
+
+        </div> <!--Section Topic: Header-->
+        <div id="navigation"> 
+
+            <button class="home_button" onclick="location.href='index.html'" alt="Home"></button>
+            <button class="button" onclick="location.href='cast.html'">Cast</button>
+            <button class="button" onclick="location.href='review.html'">Review</button>
+            <button class="button" onclick="location.href='#footer'">Bottom of Page</button>
+
+        </div> <!--Section Topic: Navigation-->
+        <hr>
+        <div id="main">
+
+            <div id="container">
+                
+                <img class="dvd_cover" src="images/johnny_mnemonic_dvd_cover.JPG" alt="Dvd cover">
+                    
+                <iframe width="711" height="400" src="https://www.youtube-nocookie.com/embed/EFJY_BZ55sI?si=wPfp77swNr8LdYUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div><!--container-->
+            <div id="summary">
+                <h2><u>Summary</u></h2>
+
+                <p class="paragraph">In 2021, the whole world is connected by the gigantic Internet, and almost a half of the population is suffering from the Nerve Attenuation Syndrome (NAS).Johnny with an implanted memory chip in his brain was ordered to transport the over loaded information from Beijing to Newark. While Pharmakom Industries supported by Yakuza tries to capture him to get the information back, the Low-tech group led by J-Bone tries to break the missing code to download the cure of NAS which Johnny carries.</p>
+
+                <h3>Genres:</h3><p>Action | Drama | Sci-Fi | Thriller</p>
+
+                <h3>Motion Picture Rating (MPA):</h3><p>Rated R for strong sci-fi violence, and for language</p>
+
+                <h3>Release date:</h3><p>May 26, 1995 (United States)</p>
+
+                <h3>Production companies:</h3><p>TriStar Pictures | Alliance Communications Corporation | Cinévision</p>
+                
+                <h3>Runtime:</h3><p>1 hour 36 minutes</p>
+
+                <h3>Trivia:</h3><p class="paragraph">The script was rumored to have been dumped on the doorstep of Keanu Reeves' house, a tactic that piqued his interest, and led to him accepting the role of Johnny.</p>
+
+                <h3>Alternate versions:</h3><p class="paragraph">In 2021, 26 years after its original release, Robert Longo has converted the film into a black & white version that is a bit closer to his original intention. That black and white version premiered at the Tribeca Film Festival.</p>
+                
+            </div>
+        </div> <!--Section Topic: Main-->
+        <hr>
+        <div id="footer">
+
+            <p>&copy; Cameron Lefebvre | SE111 | Spring 2025</p>
+            <a href="#header">Top of Page</a>
+
+        </div> <!--Section Topic: Footer-->
+    </div>
+    
+</body>
+</html>
