@@ -27,17 +27,17 @@
                 <tr>
                     <td><label for="gfirst">Parent/Guardian Name</label></td>
                     <td>
-                        <input type="text" name="gfirst" id="gfirst_first" placeholder="First Name" required>
-                        <input type="text" name="gfirst" id="gfirst_last" placeholder="Last Name" required>
+                        <input type="text" maxlength="20" name="gfirst" id="g-first" placeholder="First Name"><br>
+                        <input type="text" maxlength="20" name="gfirst" id="g-last" placeholder="Last Name">
                     </td>
                 </tr>
                 <tr>
                     <td><label for="cfirst">Child's First Name</label></td>
-                    <td><input type="text" name="cfirst" id="cfirst" placeholder="Child's First Name" required></td>
+                    <td><input type="text" name="cfirst" id="c-first" placeholder="Child's First Name" required></td>
                 </tr>
                 <tr>
                     <td><label for="age">Child's Age</label></td>
-                    <td><input type="text" name="age" id="age" placeholder="Age" required></td>
+                    <td><input type="number" name="age" id="age" value="3" required></td>
                 </tr>
                 <tr>
                     <td><h2>Date and Time</h2></td>
@@ -45,15 +45,15 @@
                 </tr>
                 <tr>
                     <td><label for="date">Date</label></td>
-                    <td><input type="date" name="date" id="date" placeholder="mm/dd/yyyy" required></td>
+                    <td><input type="date" name="date" required></td>
                 </tr>
                 <tr>
                     <td><label for="time">Start Time</label></td>
-                    <td><input type="time" name="time" id="time" placeholder="--:-- --" required></td>
+                    <td><input type="time" name="time" id="time" required></td>
                 </tr>
                 <tr>
                     <td><label for="guests">Number of Guests</label></td>
-                    <td><input type="text" name="guests" id="guests" placeholder="Number of Guests" required></td>
+                    <td><input type="number" name="guests" value="5"></td>
                 </tr>
                 <tr>
                     <td><h2>Food</h2></td>
@@ -62,36 +62,46 @@
                 <tr>
                     <td><label for="size">Size</label></td>
                     <td>
-                        <input type="radio" name="size" id="size" placeholder="Number of Guests" required>
-                        <input type="radio" name="size" id="size" placeholder="Number of Guests" required>
-                        <input type="radio" name="size" id="size" placeholder="Number of Guests" required>
+                        <input type="radio" name="size" value="sm"><label for="size">sm</label>
+                        <input type="radio" name="size" value="med"><label for="size">med</label>
+                        <input type="radio" name="size" value="lg"><label for="size">lg</label>
                     </td>
                 </tr>
                 <tr>
-                    <td>Drinks</td>
-                    <td></td>
+                    <td><label for="drink">Drinks</label></td>
+                    <td>
+                        <input type="checkbox" name="drink1" checked="true" value="coke" required><label for="drink1">Coke</label><br>
+                        <input type="checkbox" name="drink2" value="sprite"required><label for="drink2">Sprite</label><br>
+                        <input type="checkbox" name="drink3" value="fruit punch" required><label for="drink3">Fruit Punch</label><br>
+                        <input type="checkbox" name="drink4" value="lemonade" required><label for="drink4">Lemonade</label><br>
+                        <input type="checkbox" name="drink5" value="Iced tea" required><label for="drink5">Iced tea</label><br>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Cake</td>
-                    <td></td>
+                    <td><label for="cake">Cake</label></td>
+                    <td><select name="cake">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="self">I'll bring my own</option>
+                    </td>
                 </tr>
                 <tr>
                     <td><h2>Decorations</h2></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Color Scheme</td>
-                    <td></td>
+                    <td><label for="colors">Color Scheme</label></td>
+                    <td><label for="colors">Choose a color scheme for the party</label><br><input type="color" name="colors"></td>
                 </tr>
                 <tr>
-                    <td>Additional Comments</td>
-                    <td></td>
+                    <td><label for="comments">Additional Comments</label></td>
+                    <td><textarea name="comments" placeholder="Please add any additional comments"></textarea></td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <td></td>
-                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
                 </tr>
             </tfoot>
         </table>
