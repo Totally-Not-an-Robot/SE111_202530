@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Cameron Lefebvre">
+    <meta name="description" content="Week 6 - JavaScript Pay Calculator">
+
+    <title>Week 6 | JavaScript Pay Calculator</title>
+    <style>
+        body {
+            font-family:Source Code Pro, monospace;
+            background-color: rgb(67, 67, 67);
+            color: rgb(179, 179, 179);
+        }
+
+        #wrapper {
+            background-color:rgba(54, 54, 54, 0.747);
+            width:900px;
+            padding:25px;
+            margin:auto;
+            border:2px solid black;
+            box-shadow: 2px 2px 2px black; 
+            border-radius:10px; 
+            margin-top:10px; 
+        }
+
+        #header, #main, #footer {
+
+            padding:10px;
+            margin:20px;
+            text-align: center
+        }
+
+        #header {
+
+            text-align:center;
+        }
+
+
+        #footer {
+            font-size:10px;
+            text-align:center;
+            margin-top: 500px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="wrapper" >
+        <div id="header">
+
+            <h1 class="title"><em>JavaScript Pay Calculator</em></h1>
+
+            <!-- <h3 id="color-change" onclick="doIt()">Click Me!</h3> -->
+
+        </div> <!--Section Topic: Header-->
+        <div id="main">
+
+            <script>
+
+                // <--- single line comments fr javaScript
+
+                /* Multi-line comment in JS
+                   Use dev tools to access console for webpage
+                */ 
+
+                var hourlyPay = Number(prompt(`What is your hourly pay?`))
+                var hoursWorked = Number(prompt(`Hours worked over the past two weeks?`))
+                var grossPay = (hourlyPay * hoursWorked)
+                var uncleSam = (grossPay * .2)
+                var netPay = (grossPay - uncleSam)
+                console.log(`Gross Pay: $${grossPay.toFixed(2)}`)
+                console.log(`Unlce Sam's Share: $${uncleSam.toFixed(2)}`)
+                console.log(`Net Pay: $${netPay.toFixed(2)}`)
+                alert(`Gross Pay: $${grossPay.toFixed(2)}\nUnlce Sam's Share: $${uncleSam.toFixed(2)}\nNet Pay: $${netPay.toFixed(2)}`)
+
+
+                /*document.querySelector(`#color-change`).addEventListener(`click`, doIt)
+
+                function doIt(e){
+                    console.log(`OUCH!`)
+                    document.querySelector(`#color-change`).style.color = 'red'
+                    document.querySelector(`#color-change`).style.fontSize = '36px'
+
+                }
+                */
+
+            </script>
+
+        </div> <!--Section Topic: Main-->
+        <div id="footer">
+
+            <p>&copy; Cameron Lefebvre | SE111 | Spring 2025</p>
+            <a href="#header">Top of Page</a>
+
+        </div> <!--Section Topic: Footer-->
+    </div>
+    
+</body>
+</html>
