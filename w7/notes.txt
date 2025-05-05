@@ -1,0 +1,16 @@
+document.querySelector()
+the (documents[.]) query selector 
+(the () is what we would be searching for such as the TAG type ['P' or 'h1'] or ID, like in html [id = cats or #cats then in the ('#cats')] or CLASS name [class = cats ('cats')])
+
+Ex:
+
+var pElement = document.querySelector('#three')
+
+Selects:
+
+<p id="three"> :] </p> | Selects the whole thing
+
+Call:
+
+pElement.inerHtml=':[]' | This should set the internal face to this new face
+
