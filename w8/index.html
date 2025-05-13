@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="K TRUCHON">
+    <meta name="description" content="W8 | Data Structures">
+
+    <title>W8 | Data Structures</title>
+</head>
+<body>
+    <h1>W8 - Data Structures in JavaScript</h1>
+    <h3>Arrays, Associative Arrays, and Objects!</h3>
+
+    <div id="output">
+        <!--this div will hold content created in JS and written to the page here-->
+    </div>
+
+
+    <!--IN DOCUMENT JAVASCRIPT BELOW-->
+    <script>
+        //STANDARD ARRAYS------------------------------------------------------------
+        //create a new populated array 
+        var people = [
+            "Katie", 
+            "Ken",
+            "Tyler",
+            "Hailey",
+            "Keenan", 
+            "Andrew", 
+            "Jayda", 
+            "Elijah"
+        ]
+
+        console.log(`Array: ${people}`) //entire collection of data
+        console.log(`First Value of Array: ${people[0]}`) //one value within the array
+        //arrayName[index] --> name + key = value
+
+        //you can store a singl value back into a var
+        var firstPerson = people[0]
+        console.log(`firstPerson of Array: ${firstPerson}`)
+
+        //accessing last value in an array --> "length of Array - 1"
+        //all arrays are a TYPE of OBJECT which inherently have data relate properties
+        console.log(`Last Value of Array: ${people[people.length - 1]}`)
+        console.log(`Total number of names in people Array: ${people.length}`)
+
+        //change the first person's name in the people array 
+        people[0] = "Katharine"
+
+        //add a value to an array --> .push() --> this is a sub-function (method) of array types - this is the same as .append() in Python
+        //.push() will add a value to the END of an array
+        people.push("Cameron")
+        console.log(`Array: ${people}\nArray length: ${people.length}`)
+        
+        people.push("Elijah")
+        console.log(`Array: ${people}\nArray length: ${people.length}`)
+
+        //PARALELL STANDARD 1D ARRAYS----------------
+        var faveMovies = [
+            "Empire Records",
+            "Fight Club",
+            "Interstellar",
+            "Pitch Perfect",
+            "Inception",
+            "Surf's Up",
+            "Sinners",
+            "Alien",
+            "Jurassic Park", 
+            "Spider-Man"
+        ]
+
+        //PROCESSING through ARRAYS------------------------
+
+        var output = document.querySelector(`#output`)
+
+        for(let index = 0; index < people.length; index++)
+        {
+            //first: block scope variable placeholder for key/index and starting value
+            //second: condition of loop
+            //third: incrementation of index value per loop, index++ --> index += 1
+
+            console.log(`${people[index]}'s favorite movie is: ${faveMovies[index]}`)
+
+            //write the info to the HTML's #output
+            output.innerHTML += `<p> ${people[index]}'s favorite movie is: <i>${faveMovies[index]}</i></p>`
+        }
+
+        //OBJECTS--------------------------------------------------------------------
+
+        var pets = {
+
+            Katie: "George",
+            Ken: "Chopper",
+            Tyler: "Luna",
+            Hailey: "Daisy",
+            Keenan: "John",
+            Andrew: "Brody",
+            Jayda: "Zen",
+            ElijahS: "River",
+            Cameron: "Kenzi",
+            ElijahF: "Mellow",
+
+        } 
+
+
+        console.log(`Pets Array: ${pets}`) //entire object collection
+        console.log(`First Value of Array: ${pets["Katie"]}`) //one value within the obj
+
+        //utilizing dot syntax to access an objects property value:
+        //objectName.propertyName
+        console.log(`Last Value of a Object: ${pets.ElijahF}`)
+
+
+        //more of a real world object example
+        var playerCharacter = {
+            name: "John",
+            class: "Druid",
+            wildshape: "Tiger",
+            age: 2,
+            hp: 26,
+            level: 1,
+            spells: ["Shellelagh", "Ice Knife", "Speak to Animals"],
+
+            //methooooooodddd bornnnn
+            greeting: function () {
+                alert(`I am ${this.name}, hear me ROAR!`)
+            }
+
+        }
+
+        //add a value to the playerCharacter
+
+        playerCharacter.damage = 3
+
+        //processing through objects ---> for in loop needed
+        for(let key in playerCharacter){
+            //key = property
+            //for every property in the object, do x
+
+            console.log(`${key}: ${playerCharacter[key]}`)
+
+        }
+
+        var enemy = {
+            name: "John-a-thon",
+            class: "Skeleton",
+            age: 1500,
+            hp: 12,
+            level: 1,
+            spells: ["Spooook", "Thigh Bone"],
+
+            //methooooooodddd bornnnn
+            greeting: function () {
+                alert(`I am ${this.name}, hear me creak`)
+            },
+
+            damage: 5
+
+        }
+
+        //properties are resuable:
+        console.log(`${playerCharacter.name} is a ${playerCharacter.class}`)
+        console.log(`${enemy.name} is a ${enemy.class}`)
+
+        playerCharacter.greeting()
+        enemy.greeting()
+
+        //put it all togetherrrrrr
+
+        var fight = [
+            playerCharacter, //fight[0]
+            enemy //fight[1]
+        ]
+
+        //empty string to add data to during loopception
+
+        var newOutput = ``
+
+        //process the data structure
+        //main structure is a standard array, so outter for loop is set for that
+        for(let i = 0; i < fight.length; i++)
+        {
+            //this outter for loop controls which array value (object) we are doing stuff to
+            newOutput += `<hr><h3>INFO FOR: ${fight[i].name} </h3>`
+            // inner loop will look at EACH KEY in the CURRENT OBJECT - fight[i]
+            for(let key in fight[i])
+        {
+            newOutput += `<p><b>${key}:</b> ${fight[i][key]}</p>`
+        }
+        }
+
+        //write the info to the $#output div
+        output.innerHTML += newOutput//document.querySelector(`#output`).innerHTML += newOutput
+
+
+    </script>
+    
+</body>
+</html>

@@ -14,3 +14,8 @@ Call:
 
 pElement.inerHtml=':[]' | This should set the internal face to this new face
 
+
+
+
+
+Genetic algorithm, closeness to 100 for testing/simulation, might make it easy for efficiency scores and testing
